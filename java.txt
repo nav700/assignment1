@@ -1,0 +1,37 @@
+                                                         QUESTION S BASED ON JAVA::-->>
+ 1>.  "MULTIPLE INHERITANCE IS ACHIEVED BY IMPLEMENTING INTERFACES" JUSTIFY?
+ ANS-  
+       interface abstracct class ka baap h bole to                                                              WHY WE USE INTERFACE>
+> interface is an abstract class which havent the body definition ..                            1.  to achieve multiple inheritance
+> it is uswd to achieve abstraction                                                             2.  to achieve abstraction
+                                   interface shape                                              3.  loose coupling
+                               {
+                                   void area();
+                               }
+                                  interface figure
+                               {
+                                 void perimeter();
+                               }
+                              interface circle extends shape,figure
+                               {
+                               }
+2> EXPLAIN THE PROCESS OF CREATING MULTIPLE THREADS USING RUNNABLE INTERFACE?
+ANS.  we can create multpiple threads by two ways:
+       (1) extending thread
+       (2) using runnable interface
+   class mythread implemements runnable
+{
+  void run()
+  {
+    for(int i=1;i<=5;i++)
+     {
+       system.out.println(i);
+     }
+  }   
+}
+class mythreaddemo
+{
+  mythread th1=new mythread();
+  thread th=new thread(th1);
+  th.start();
+}
